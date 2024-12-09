@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'red hat display', 'sans-serif';
+    font-size: 17px;
+    background: url(pattern-background-desktop.svg), hsl(225, 100%, 94%);
+    background-repeat: no repeat;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.Card{
+    width: min(100% - 1rem, 22rem);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 6px 31px 0px hsl(225, 100%, 94%);
+}
+.image-container{
+    width: 100%;
+    height: 9rem;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.content h2{
+    font-weight: 850;
+    color:hsl(225, 10%, 8%)
+}
+.content p{
+    color: hsl(223, 23%, 55%);
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    gap: 1rem;
+}
+.pricing img{
+    width: 2.5rem;
+}
+.pricing div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pricing div h4{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.pricing div small{
+    font-weight: 500;
+    color: hsl(223, 23%, 55%);
+}
+.pricing a{
+    font-weight: 500;
+    margin-left: auto;
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+    font-size: 1 rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+}
+.first{
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    box-shadow: 2px 16px 37px -11px rgba(56, 41, 224, 0.75);
+}
+.first:focus{
+    outline: 2px solid hsl(225, 100%, 98%);
+    background: hsl(245, 70%, 52% 0.9);
+}
+.first:hover{
+    background: hsl(245, 70%, 52% 0.9);
+}
+.second{
+    color: hsl(225, 10%, 8%);
+    background: none;
+}
